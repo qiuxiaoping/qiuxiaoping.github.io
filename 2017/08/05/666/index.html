@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>在github上搭建博客的命令 | 邱晓萍的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传 ##">
+  <meta name="description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在github上搭建博客的命令">
 <meta property="og:url" content="http://yoursite.com/2017/08/05/666/index.html">
 <meta property="og:site_name" content="邱晓萍的博客">
-<meta property="og:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传 ##">
-<meta property="og:updated_time" content="2017-08-06T03:14:15.303Z">
+<meta property="og:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
+<meta property="og:updated_time" content="2017-08-06T03:15:18.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在github上搭建博客的命令">
-<meta name="twitter:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传 ##">
+<meta name="twitter:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
   
     <link rel="alternative" href="/atom.xml" title="邱晓萍的博客" type="application/atom+xml">
   
@@ -173,8 +173,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1.安装node.js<br>2.安装git<br>3.安装hexo<br>4.更换主题，配置文件<br>5.用git生成ssl密钥填写到github账号<br>6.执行上传</p>
-<p>##<br><a id="more"></a></p>
+        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1.安装node.js<br>2.安装git<br>3.安装hexo<br>4.更换主题，配置文件<br>5.用git生成ssl密钥填写到github账号<br>6.执行上传<br><a id="more"></a></p>
 <h3 id="1-2-安装node-js，安装git"><a href="#1-2-安装node-js，安装git" class="headerlink" title="1-2 安装node.js，安装git"></a>1-2 安装node.js，安装git</h3><p>直接下载安装，git装在C盘</p>
 <h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3 安装hexo"></a>3 安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">3.1 安装</div><div class="line">npm install hexo-cli -g </div><div class="line">npm install hexo --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">3.2 检查</div><div class="line">hexo -v</div><div class="line"></div><div class="line">3.3 初始化</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line"></div><div class="line">3.4 启动</div><div class="line">hexo generate 生成的静态内容在public文件夹内。</div><div class="line">hexo server 启动</div><div class="line">hexo deploy 部署 上传到github</div><div class="line">hexo clean 删除public文件夹中的内容。</div></pre></td></tr></table></figure>
 <h3 id="4-更换主题，配置文件"><a href="#4-更换主题，配置文件" class="headerlink" title="4 更换主题，配置文件"></a>4 更换主题，配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">4.1 配置Deployment</div><div class="line">_config.yml文件中，找到Deployment，然后按照如下修改：</div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div><div class="line">4.2 下载主题</div><div class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div><div class="line">4.3 改配置</div><div class="line">theme: 主题名</div><div class="line">4.4 本地预览</div></pre></td></tr></table></figure>
