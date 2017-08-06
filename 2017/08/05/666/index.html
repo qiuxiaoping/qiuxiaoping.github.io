@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/05/666/index.html">
 <meta property="og:site_name" content="邱晓萍的博客">
 <meta property="og:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
-<meta property="og:updated_time" content="2017-08-06T06:20:19.431Z">
+<meta property="og:updated_time" content="2017-08-06T06:22:30.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在github上搭建博客的命令">
 <meta name="twitter:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
@@ -57,8 +57,6 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -114,8 +112,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -136,9 +132,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -176,7 +170,7 @@
         <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1.安装node.js<br>2.安装git<br>3.安装hexo<br>4.更换主题，配置文件<br>5.用git生成ssl密钥填写到github账号<br>6.执行上传<br><a id="more"></a></p>
 <h3 id="1-2-安装node-js，安装git"><a href="#1-2-安装node-js，安装git" class="headerlink" title="1-2 安装node.js，安装git"></a>1-2 安装node.js，安装git</h3><p>直接下载安装，git装在C盘</p>
 <h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3 安装hexo"></a>3 安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">3.1 安装</div><div class="line">npm install hexo-cli -g </div><div class="line">npm install hexo --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">3.2 检查</div><div class="line">hexo -v</div><div class="line"></div><div class="line">3.3 初始化</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line"></div><div class="line">3.4 启动</div><div class="line">hexo generate 生成的静态内容在public文件夹内。</div><div class="line">hexo server 启动</div><div class="line">hexo deploy 部署 上传到github</div><div class="line">hexo clean 删除public文件夹中的内容。</div></pre></td></tr></table></figure>
-<h3 id="4-更换主题，配置文件"><a href="#4-更换主题，配置文件" class="headerlink" title="4 更换主题，配置文件"></a>4 更换主题，配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">4.1 配置Deployment</div><div class="line">_config.yml文件中，找到Deployment，然后按照如下修改：</div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div><div class="line"></div><div class="line">4.2 下载主题</div><div class="line">git <span class="built_in">clone</span> 主题地址</div><div class="line"></div><div class="line">4.3 改配置</div><div class="line">theme: 主题名</div><div class="line">4.4 本地预览</div></pre></td></tr></table></figure>
+<h3 id="4-更换主题，配置文件"><a href="#4-更换主题，配置文件" class="headerlink" title="4 更换主题，配置文件"></a>4 更换主题，配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">4.1 配置Deployment</div><div class="line">_config.yml文件中，找到Deployment，然后按照如下修改：</div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div><div class="line"></div><div class="line">4.2 下载主题</div><div class="line">git <span class="built_in">clone</span> 主题地址</div><div class="line"></div><div class="line">4.3 改配置</div><div class="line">theme: 主题名</div><div class="line"></div><div class="line">4.4 本地预览</div></pre></td></tr></table></figure>
 <h3 id="5-用git生成ssl密钥填写到github账号"><a href="#5-用git生成ssl密钥填写到github账号" class="headerlink" title="5 用git生成ssl密钥填写到github账号"></a>5 用git生成ssl密钥填写到github账号</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">5.1 打开Git Bash终端：在桌面右键，会出现<span class="string">"Git Bash here"</span>的选项，点击即可。</div><div class="line">git config --global user.name <span class="string">"你的GitHub用户名"</span></div><div class="line">git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></div><div class="line"></div><div class="line">5.2 设置user name和email：</div><div class="line">ssh-keygen -t rsa -C <span class="string">"git@github.com:yourname/yourname.github.io.g"</span></div><div class="line"></div><div class="line">5.3 此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。</div><div class="line">注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。</div><div class="line"></div><div class="line">5.4 将id_rsa.pub中的内容复制到 github账号的密钥 Add SSH key</div></pre></td></tr></table></figure>
 <h3 id="6-执行上传-，写文章"><a href="#6-执行上传-，写文章" class="headerlink" title="6.执行上传 ，写文章"></a>6.执行上传 ，写文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">6.1 新建一篇博客</div><div class="line">hexo new post <span class="string">"名字"</span></div><div class="line">hexo g   生成</div><div class="line">hexo d  部署</div></pre></td></tr></table></figure>
 <h3 id="7-如果你有什么疑问可以在下面给我留言哈哈"><a href="#7-如果你有什么疑问可以在下面给我留言哈哈" class="headerlink" title="7.如果你有什么疑问可以在下面给我留言哈哈"></a>7.如果你有什么疑问可以在下面给我留言<del>哈哈</del></h3>
