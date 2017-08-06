@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/05/666/index.html">
 <meta property="og:site_name" content="邱晓萍的博客">
 <meta property="og:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
-<meta property="og:updated_time" content="2017-08-06T03:42:56.352Z">
+<meta property="og:updated_time" content="2017-08-06T06:11:32.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在github上搭建博客的命令">
 <meta name="twitter:description" content="步骤1.安装node.js2.安装git3.安装hexo4.更换主题，配置文件5.用git生成ssl密钥填写到github账号6.执行上传">
@@ -179,7 +179,7 @@
 <h3 id="4-更换主题，配置文件"><a href="#4-更换主题，配置文件" class="headerlink" title="4 更换主题，配置文件"></a>4 更换主题，配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">4.1 配置Deployment</div><div class="line">_config.yml文件中，找到Deployment，然后按照如下修改：</div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  branch: master</div><div class="line">4.2 下载主题</div><div class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div><div class="line">4.3 改配置</div><div class="line">theme: 主题名</div><div class="line">4.4 本地预览</div></pre></td></tr></table></figure>
 <h3 id="5-用git生成ssl密钥填写到github账号"><a href="#5-用git生成ssl密钥填写到github账号" class="headerlink" title="5 用git生成ssl密钥填写到github账号"></a>5 用git生成ssl密钥填写到github账号</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1.打开Git Bash终端：在桌面右键，会出现<span class="string">"Git Bash here"</span>的选项，点击即可。</div><div class="line">git config --global user.name <span class="string">"你的GitHub用户名"</span></div><div class="line">git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></div><div class="line"></div><div class="line">2.设置user name和email：</div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"git@github.com:yourname/yourname.github.io.g"</span></div><div class="line"></div><div class="line">3.此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。</div><div class="line">注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。</div><div class="line"></div><div class="line">4.将id_rsa.pub中的内容复制到 github账号的密钥 Add SSH key</div></pre></td></tr></table></figure>
 <h3 id="6-执行上传-，写文章"><a href="#6-执行上传-，写文章" class="headerlink" title="6.执行上传 ，写文章"></a>6.执行上传 ，写文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">6.1 新建一篇博客</div><div class="line">hexo new post <span class="string">"名字"</span></div><div class="line">hexo g   生成</div><div class="line">hexo d  部署</div></pre></td></tr></table></figure>
-
+<h3 id="7-如果你有什么疑问可以在下面给我留言哈哈"><a href="#7-如果你有什么疑问可以在下面给我留言哈哈" class="headerlink" title="7.如果你有什么疑问可以在下面给我留言哈哈"></a>7.如果你有什么疑问可以在下面给我留言<del>哈哈</del></h3>
       
 
       
@@ -195,6 +195,16 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
