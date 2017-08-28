@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>欢迎来到邱晓萍的博客</title>
+  <title>Archives: 2017/8 | 欢迎来到邱晓萍的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="欢迎来到邱晓萍的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2017/08/page/2/index.html">
 <meta property="og:site_name" content="欢迎来到邱晓萍的博客">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="欢迎来到邱晓萍的博客">
@@ -145,450 +145,50 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-WDCP上配置SSL证书即https" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/28/WDCP上配置SSL证书即https/">WDCP上配置SSL证书即https</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/28/WDCP上配置SSL证书即https/" class="archive-article-date">
-  	<time datetime="2017-08-28T08:20:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-28</time>
-</a>
-        
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>百度总结</p>
-<h3 id="wdcp-安装ssl证书教程实现https访问"><a href="#wdcp-安装ssl证书教程实现https访问" class="headerlink" title="wdcp 安装ssl证书教程实现https访问"></a>wdcp 安装ssl证书教程实现https访问</h3><h4 id="1-申请免费或付费证书"><a href="#1-申请免费或付费证书" class="headerlink" title="1.申请免费或付费证书"></a>1.申请免费或付费证书</h4><h4 id="2-新建站点并真按照提示上传SSL证书，证书名称为：域名-key-域名-pem"><a href="#2-新建站点并真按照提示上传SSL证书，证书名称为：域名-key-域名-pem" class="headerlink" title="2.新建站点并真按照提示上传SSL证书，证书名称为：域名.key/域名.pem"></a>2.新建站点并真按照提示上传SSL证书，证书名称为：域名.key/域名.pem</h4><h4 id="3-修改对应站点的-conf文件（配置文件）"><a href="#3-修改对应站点的-conf文件（配置文件）" class="headerlink" title="3.修改对应站点的.conf文件（配置文件）"></a>3.修改对应站点的.conf文件（配置文件）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">wdcp面板-&gt;站点管理-&gt;文件管理修改 <span class="string">"域名.conf文件"</span> 参考路径：/www/wdlinux/nginx/conf/vhost</div><div class="line"></div><div class="line"></div><div class="line">在 listen       80;下面新增四行：</div><div class="line"></div><div class="line">listen 443; </div><div class="line">ssl on; </div><div class="line">ssl_certificate   /www/wdlinux/nginx/conf/vhost/文件名.pem; </div><div class="line">ssl_certificate_key  /www/wdlinux/nginx/conf/vhost/文件名.key;</div></pre></td></tr></table></figure>
-<h4 id="4-在wdcp左侧导航找到安全管理-gt-防火墙-iptables-，新增443端口"><a href="#4-在wdcp左侧导航找到安全管理-gt-防火墙-iptables-，新增443端口" class="headerlink" title="4.在wdcp左侧导航找到安全管理-&gt; 防火墙(iptables)，新增443端口"></a>4.在wdcp左侧导航找到安全管理-&gt; 防火墙(iptables)，新增443端口</h4><h4 id="5-系统管理-gt-服务重启，重启web服务"><a href="#5-系统管理-gt-服务重启，重启web服务" class="headerlink" title="5.系统管理-&gt;服务重启，重启web服务"></a>5.系统管理-&gt;服务重启，重启web服务</h4>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
+    
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/28/WDCP上配置SSL证书即https/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-一些常用的段子" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+        <div class="archives">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/21/一些常用的段子/">&#39;一些段子&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/21/一些常用的段子/" class="archive-article-date">
-  	<time datetime="2017-08-21T09:49:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="（1）手机端头部"><a href="#（1）手机端头部" class="headerlink" title="（1）手机端头部"></a>（1）手机端头部</h3>
-        
-          <a class="article-more-a" href="/2017/08/21/一些常用的段子/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/21/一些常用的段子/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-微信分享" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/08/微信分享/">&#39;微信分享&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/08/微信分享/" class="archive-article-date">
-  	<time datetime="2017-08-08T09:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于微信分享网页</p>
-<h3 id="1-html写法，文件名后缀为html"><a href="#1-html写法，文件名后缀为html" class="headerlink" title="1.html写法，文件名后缀为html"></a>1.html写法，文件名后缀为html</h3><h4 id="引入微信公用js"><a href="#引入微信公用js" class="headerlink" title="引入微信公用js"></a>引入微信公用js</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://res.wx.qq.com/open/js/jweixin-1.0.0.js"</span> &gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/08/08/微信分享/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/08/微信分享/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-关于centos上搭建站点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/06/关于centos上搭建站点/">关于centos上搭建站点</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/06/关于centos上搭建站点/" class="archive-article-date">
-  	<time datetime="2017-08-06T08:29:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="简洁的笔记"><a href="#简洁的笔记" class="headerlink" title="简洁的笔记"></a>简洁的笔记</h2><p>必要条件：服务器已经安装了mysql+php+apeach环境（yum）+ ftp上传工具</p>
-        
-          <a class="article-more-a" href="/2017/08/06/关于centos上搭建站点/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/06/关于centos上搭建站点/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-666" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/05/666/">在github上搭建博客的命令</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/05/666/" class="archive-article-date">
-  	<time datetime="2017-08-05T08:36:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1.安装node.js<br>2.安装git<br>3.安装hexo<br>4.更换主题，配置文件<br>5.用git生成ssl密钥填写到github账号<br>6.执行上传<br>
-        
-          <a class="article-more-a" href="/2017/08/05/666/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/05/666/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/05/hello-world/">欢迎来到我的博客</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/05/hello-world/" class="archive-article-date">
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/08/05/hello-world/" class="archive-article-date">
   	<time datetime="2017-08-05T07:05:14.623Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-05</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我会在这里做一些技术分享</p>
-<h2 id="今天是完美的一天。"><a href="#今天是完美的一天。" class="headerlink" title="今天是完美的一天。"></a>今天是完美的一天。</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">今天天气很好，太阳很大，很晒，可以煎鸡蛋。我在小景同学的嘲笑下搭建了一个新的博客。</div></pre></td></tr></table></figure>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/08/05/hello-world/">欢迎来到我的博客</a>
+    </h1>
+  
 
-      
+        <div class="article-info info-on-right">
+          
+          
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/05/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+  
+    </div></section>
+  
+
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2017/08/">&laquo; Prev</a><a class="page-number" href="/archives/2017/08/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -611,9 +211,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
