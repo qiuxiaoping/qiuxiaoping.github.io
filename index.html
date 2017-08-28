@@ -166,8 +166,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>百度总结</p>
-<h3 id="wdcp-安装ssl证书教程实现https访问"><a href="#wdcp-安装ssl证书教程实现https访问" class="headerlink" title="wdcp 安装ssl证书教程实现https访问"></a>wdcp 安装ssl证书教程实现https访问</h3><h4 id="1-申请免费或付费证书"><a href="#1-申请免费或付费证书" class="headerlink" title="1.申请免费或付费证书"></a>1.申请免费或付费证书</h4><h4 id="2-新建站点并真按照提示上传SSL证书，证书名称为：域名-key-域名-pem"><a href="#2-新建站点并真按照提示上传SSL证书，证书名称为：域名-key-域名-pem" class="headerlink" title="2.新建站点并真按照提示上传SSL证书，证书名称为：域名.key/域名.pem"></a>2.新建站点并真按照提示上传SSL证书，证书名称为：域名.key/域名.pem</h4><h4 id="3-修改对应站点的-conf文件（配置文件）"><a href="#3-修改对应站点的-conf文件（配置文件）" class="headerlink" title="3.修改对应站点的.conf文件（配置文件）"></a>3.修改对应站点的.conf文件（配置文件）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">wdcp面板-&gt;站点管理-&gt;文件管理修改 <span class="string">"域名.conf文件"</span> 参考路径：/www/wdlinux/nginx/conf/vhost</div><div class="line"></div><div class="line"></div><div class="line">在 listen       80;下面新增四行：</div><div class="line"></div><div class="line">listen 443; </div><div class="line">ssl on; </div><div class="line">ssl_certificate   /www/wdlinux/nginx/conf/vhost/文件名.pem; </div><div class="line">ssl_certificate_key  /www/wdlinux/nginx/conf/vhost/文件名.key;</div></pre></td></tr></table></figure>
-<h4 id="4-在wdcp左侧导航找到安全管理-gt-防火墙-iptables-，新增443端口"><a href="#4-在wdcp左侧导航找到安全管理-gt-防火墙-iptables-，新增443端口" class="headerlink" title="4.在wdcp左侧导航找到安全管理-&gt; 防火墙(iptables)，新增443端口"></a>4.在wdcp左侧导航找到安全管理-&gt; 防火墙(iptables)，新增443端口</h4><h4 id="5-系统管理-gt-服务重启，重启web服务"><a href="#5-系统管理-gt-服务重启，重启web服务" class="headerlink" title="5.系统管理-&gt;服务重启，重启web服务"></a>5.系统管理-&gt;服务重启，重启web服务</h4>
+<h3 id="wdcp-安装ssl证书教程实现https访问"><a href="#wdcp-安装ssl证书教程实现https访问" class="headerlink" title="wdcp 安装ssl证书教程实现https访问"></a>wdcp 安装ssl证书教程实现https访问</h3><h4 id="1-申请免费或付费证书"><a href="#1-申请免费或付费证书" class="headerlink" title="1.申请免费或付费证书"></a>1.申请免费或付费证书</h4>
+        
+          <a class="article-more-a" href="/2017/08/28/WDCP上配置SSL证书即https/#more">more >></a>
+        
       
 
       
